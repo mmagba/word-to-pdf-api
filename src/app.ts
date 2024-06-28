@@ -110,6 +110,11 @@ app.post(
     }
 );
 
+
+app.post("/track", (req, res) => {
+    console.log('Someone generated a file');
+});
+
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
